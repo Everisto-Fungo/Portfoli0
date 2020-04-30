@@ -1,0 +1,744 @@
+
+ /* SOURCE FOR FONT 
+ <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+}
+/* For the "inset" look only */
+html {
+    overflow: auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#footer{
+    overflow-y: hidden;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 50px;
+    min-height: 10px;
+    background: #6bc0ff; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #6bc0ff; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #26272A;
+    color: whitesmoke;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* back to top */
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#6bc0ff;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+    transition: background-color .2s  ease-in-out, 
+    opacity .5s, visibility .5s;   
+     
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#3498db;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+/* back to top end */
+
+.footer-contact a{
+    color: #6bc0ff;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+.footer-contact a:hover{
+    color: white;
+}
+
+
+.vr{
+    width: 90vw;
+}
+.logo{
+    width: 35%;
+}
+
+#hero{
+    padding: 0px;
+    background-image: url(yyy.jpg) ;
+    /* background-image: url(head-1.jpg) ; */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    /* margin-bottom: 50px; */
+
+}
+/* nav header start  */
+.nav-holder{
+    height: 10vh;
+    margin: auto;
+    /* transition: all .1s ease-in-out; */
+
+}
+/* nav header end  */
+
+/* hero start  */
+
+#home{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+
+}
+#home h4{
+    font-size: 1.2rem;
+}
+
+.contact-us{
+    background-color: #6bc0ff;
+    border-radius: 3px;
+    transition: all 150ms ease-in-out;
+    color: #343434;
+
+
+}.contact-us:hover{
+    background-color: #ffffff;
+    color: #343434;
+    border-radius: 3px;
+
+}
+
+.see-portfolio{
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all 150ms ease-in-out;
+    color: #343434;
+
+}.see-portfolio:hover{
+    background-color: #6bc0ff;
+    /* border-radius: 3px; */
+}
+
+
+.intro-div{
+    width: 100%;
+}
+.intro-content{
+    padding-top: 7em;
+}
+.txt-rotate{
+    color:#6bc0ff ;
+}
+.header-text{
+    font-size: 1.07em;
+}
+
+#slash{
+    color:#6bc0ff;
+font-weight: 400;
+
+    
+}
+
+/* hero end  */
+
+
+/* skills start  */
+
+.my-skil{
+    display: inline;
+}
+.skills{
+    height: 20vh;
+    perspective: 85px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 50%; */
+    align-items: center;
+    margin: auto;
+    background-color: #26272A;
+
+}
+.skill{
+    /* background-color: yellow; */
+    width: 5.1em;
+    height: 5.1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    margin: 0px 15px;
+}
+
+
+
+.skill span{
+   font-size: small; 
+   padding-top: 1.5px;
+}
+.img-service-container{
+    transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+.skill-icon{
+    width: 30px;
+}
+/* skills end  */
+
+
+/* services start  */
+
+
+
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 200px; */
+
+}
+
+.second,.first{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.moja{
+    min-height: 10vh;
+     width: 90vw;
+ }
+ .mbiri{
+    min-height: 25vh;
+    max-width: 90vw;
+    perspective: 500px;
+
+ }.tatu{
+    min-height: 25;
+    max-width: 90vw;
+    perspective: 500px;
+
+ }
+ .nne{
+    min-height: 25vh;
+    max-width: 90vw;
+    perspective: 500px;
+
+ }
+
+
+ .eva1{
+    padding-bottom: 1.5em;
+    width: 18rem;
+    text-align: center;
+
+ }
+
+ .rectangle{
+    height: 3px;
+
+}
+
+
+.img-service{
+    width: 28%;
+}
+
+
+/* services end  */
+
+
+
+
+
+
+
+
+
+
+
+/* particles-js  start*/
+/* .particles-whole{
+    margin-top: 3em;
+} */
+
+#particles-js{
+    background-color: #26272A;
+    /* background-color: #26272a; */
+    color: whitesmoke;
+
+}
+
+
+
+.particle-content{
+    display: flex;
+    width: 90vw;
+    flex-wrap:wrap ;
+    justify-content: center;
+    position: absolute;
+    top: 140vh;
+    left:50%;
+    /* margin: auto; */
+    transform: translate(-50%, -0%);
+ 
+}
+/* particles-js  end*/
+
+/* project cards  */
+
+
+
+#portfolio{
+    width: 100%;
+  
+}
+
+/* nebu buttons */
+.bt{
+    background-color: #6bc0ff;
+    width: 3.5rem;
+    text-align: center;
+    color: #1a1a1a;
+    margin-right: 1.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+
+.styled-select {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+  }
+  .styled-select::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    right: 4px;
+    border: 8px solid transparent;
+    border-top-color: #6bc0ff; ;
+    margin-top: -4px;
+  }
+  .styled-select::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 100%;
+    background: #edf3f6; 
+    pointer-events: none;
+    border-radius: 0 4px 4px 0;
+    top: 0;
+    right: 0;
+  }
+  
+  .styled-select select {
+    margin: 0;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background-color: #edf3f6;
+    border: 1px solid #26272A;
+    padding: 10px 20px 10px 10px;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  .styled-select select::-ms-expand {
+      display: none;
+  }
+  
+  
+
+.title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.content {
+    position: relative;
+    width: 90%;
+   max-width: 15rem;
+   height: 20vh;
+    /* margin: auto; */
+    overflow: hidden
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+.content-text{
+    color: #6bc0ff;
+
+}.content-text:hover{
+    color: #3498db;
+
+}
+
+.phony{
+    overflow-y: hidden;
+    max-width: 100vw;
+}
+.content:hover .content-overlay {
+    
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.content-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+img {
+    /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px */
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
+
+.content-details h5 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em
+}
+
+.fadeIn-bottom {
+    top: 80%
+}
+
+
+/* footer start */
+
+
+.main-footer{
+    background-position: bottom;
+    background-size: cover;
+
+}
+.footer{
+    text-align: center;
+    min-height: 30vh;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-social-img{
+    width: 35%;
+}
+
+.git{
+    width: 40%;
+}
+/* footer ens */
+
+
+
+
+
+
+/* scroll nav header start */
+.scrolled-navs{
+    
+    background-color: whitesmoke;
+    height: 5rem;
+}
+
+.scrolled-navs .logo{
+    width: 1.5rem;
+    /* transition: all .1s ease-in-out; */
+}
+
+.scrolled-navs .name {
+    /* width: 1.1rem; */
+}
+
+
+/* scroll nav header end */
+.navz-bgi{
+    background:whitesmoke;
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+@media (max-width: 350px){
+    .navz-bgi{
+        background:whitesmoke;
+    }
+    #hero{
+        /* padding: 0px;
+        background-image: url(yyy.jpg) ;
+        height: 100vh; */
+        background-image: none;
+        /* background-position: left;
+        background-size: cover;
+        width: 100vw; */
+        /* margin-bottom: 50px; */
+
+        background-color: #222327;
+    
+    }
+    
+body{
+    overflow-x: hidden;
+    background-color: #222327;
+    color: whitesmoke;
+    letter-spacing: 0.05em;
+
+
+}
+
+.skills{
+    background-color: #222327;
+}
+#particles-js{
+    background-color: #222327;
+    padding-top: 20px;
+
+}
+
+.intro-content{
+    padding-top: 8em;
+}
+    
+ }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .navz-bgi{
+        background:whitesmoke;
+    } }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navz-bgi{
+        background:none;
+    }
+
+.intro-content{
+    margin-top: 0px;
+}
+
+.particles-whole{
+    margin-top: 20px;
+}
+    .my-skill{
+        display: none;
+    }
+
+    #home h4{
+        font-size: 1.6rem;
+        letter-spacing: 0.06em;
+
+    }
+    .nav-holder{
+        width: 100%;
+        margin: auto;
+    }
+
+
+
+.header-text{
+    font-size: 1.5em;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    height: 70vh;
+
+}
+
+
+/* .skills{
+    height: 20vh;
+} */
+
+.service{
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    padding-top: 200px;
+    flex-direction: column;
+
+}
+
+.slash{
+    color: #6bc0ff;
+}
+.eva1{
+    padding-bottom: 1.5em;
+    width: 18rem;
+    text-align: left;
+
+ }
+
+
+.particle-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    position: absolute;
+    top: 125vh;
+    left:50%;
+    /* margin: auto; */
+    transform: translate(-50%, -0%);
+ 
+}
+
+.footer{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.vr{
+    width: 60vw;
+}
+
+
+
+.scrolled-navs{
+    background-color: whitesmoke;
+    height: 2.5rem;
+}
+
+   
+.scrolled-navs .me{
+    display: none;
+}
+
+#hero{
+    padding: 0px;
+    background-image: url(yyy.jpg) ;
+    /* background-image: url(head-1.jpg) ; */
+    min-height: 80vh;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    max-width: 13rem;
+
+}
+ }
+
+ 
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+
+.vw{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
